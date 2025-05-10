@@ -1,35 +1,35 @@
 body {
-    height: 100hv;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100hv; /* Установка высоты тела документа на 100 единиц высоты вьюпорта (ошибка: должно быть 100vh) */
+    display: flex; /* Использование Flexbox для выравнивания содержимого */
+    justify-content: center; /* Центрирование содержимого по горизонтали */
+    align-items: center; /* Центрирование содержимого по вертикали */
 }
 
 .comic-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    background-color: #ff5252;
-    border: 2px solid #000;
-    border-radius: 10px;
-    box-shadow: 5px 5px 0px #000;
-    transition: all 0.3s ease;
-    cursor: pointer;
+    display: inline-block; /* Установка кнопки как блочного элемента, который можно центрировать */
+    padding: 10px 20px; /* Установка внутреннего отступа: 10px сверху и снизу, 20px слева и справа */
+    font-size: 24px; /* Установка размера шрифта на 24 пикселя */
+    font-weight: bold; /* Установка жирного начертания шрифта */
+    text-align: center; /* Выравнивание текста по центру */
+    text-decoration: none; /* Удаление подчеркивания текста (если кнопка будет ссылкой) */
+    color: #fff; /* Установка цвета текста на белый */
+    background-color: #ff5252; /* Установка фона кнопки на красный цвет */
+    border: 2px solid #000; /* Установка черной рамки толщиной 2 пикселя */
+    border-radius: 10px; /* Закругление углов рамки на 10 пикселей */
+    box-shadow: 5px 5px 0px #000; /* Добавление тени к кнопке с смещением 5px по горизонтали и вертикали */
+    transition: all 0.3s ease; /* Плавный переход для всех свойств за 0.3 секунды */
+    cursor: pointer; /* Изменение курсора на указатель при наведении на кнопку */
 }
 
 .comic-button:hover {
-    background-color: #fff;
-    color: #ff5252;
-    border: 2px solid #ff5252;
-    box-shadow: 5px 5px 0px #ff5252;
+    background-color: #fff; /* Изменение фона кнопки на белый при наведении */
+    color: #ff5252; /* Изменение цвета текста на красный при наведении */
+    border: 2px solid #ff5252; /* Изменение цвета рамки на красный при наведении */
+    box-shadow: 5px 5px 0px #ff5252; /* Изменение цвета тени на красный при наведении */
 }
 
 .comic-button:active {
-    background-color: #fcf414;
-    box-shadow: none;
-    transform: translateY(4px);
+    background-color: #fcf414; /* Изменение фона кнопки на желтый при нажатии */
+    box-shadow: none; /* Удаление тени при нажатии */
+    transform: translateY(4px); /* Смещение кнопки вниз на 4 пикселя при нажатии */
 }
